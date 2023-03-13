@@ -1,0 +1,22 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (CudaRuntime1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Compiling CUDA source file main.cu...
+  
+  C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin\nvcc.exe" -gencode=arch=compute_80,code=\"sm_80,compute_80\" -gencode=arch=compute_80,code=\"sm_80,compute_80\" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o "C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\x64\Debug\main.cu.obj" "C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\main.cu" 
+C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\main.cu(158): warning #177-D: variable "event" was declared but never referenced
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z6renderP4vec3iiiPP6cameraPP7hitableP17curandStateXORWOW' cannot be statically determined
+C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\main.cu(158): warning #177-D: variable "event" was declared but never referenced
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+CUDACOMPILE : ptxas warning : Stack size for entry function '_Z6renderP4vec3iiiPP6cameraPP7hitableP17curandStateXORWOW' cannot be statically determined
+  main.cu
+  tmpxft_000037ac_00000000-7_main.compute_52.cudafe1.cpp
+C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\vec3.h(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\vec3.h(133): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\main.cu(158): warning C4101: 'event': unreferenced local variable
+C:\Users\NUC X15\source\repos\CudaRuntime1\CudaRuntime1\main.cu(303): warning C4715: 'SDL_main': not all control paths return a value
+  qbImage.cpp
+  CudaRuntime1.vcxproj -> C:\Users\NUC X15\source\repos\CudaRuntime1\x64\Debug\CUDA_RAY_TRACING.exe
